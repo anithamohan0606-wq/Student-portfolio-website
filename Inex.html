@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P. Anitha | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">My Portfolio</a>
+    <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">&#9776;</button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero fade-in">
+    <h1>Hi, I'm <span>P. Anitha</span></h1>
+    <p class="typing">Aspiring Web Developer</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn">View Projects</a>
+      <button id="resumeBtn" class="btn btn-outline">Download Resume</button>
+    </div>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>I am a passionate Arts and Science student who loves building responsive and
+    interactive websites using HTML, CSS and JavaScript. I enjoy learning new
+    technologies and turning ideas into working applications.</p>
+  </section>
+
+  <section id="education" class="section alt fade-in">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="card"><h3>B.Sc. Computer Science</h3><p>Dr. M.G.R. Government Arts and Science College for Women, Villupuram &bull; 2025 - 2028</p></div>
+      <div class="card"><h3>Higher Secondary (HSC)</h3><p>Your School Name &bull; 2023 - 2025</p></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <h2>Technical Skills</h2>
+    <div id="skillsList" class="skills"></div>
+  </section>
+
+  <section id="projects" class="section alt fade-in">
+    <h2>Projects</h2>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="HTML">HTML</button>
+      <button class="filter-btn" data-filter="CSS">CSS</button>
+      <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+    </div>
+    <div id="projectGrid" class="grid"></div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name *</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" placeholder="Enter your email">
+      <small class="error" id="emailError"></small>
+
+      <label for="message">Message *</label>
+      <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+      <small class="error" id="messageError"></small>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <footer><p>&copy; 2026 Student Portfolio. All rights reserved.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
